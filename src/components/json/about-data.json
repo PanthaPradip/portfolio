@@ -1,0 +1,25 @@
+{
+    "about": "Ever since I was about 14-15 years old, the world of bits,transistors & how they all come together to make things work has fascinated me. That curiosity brought my interest in computers and soon enough, I found myself diving into programming languages. I came across the term 'Artificial Intelligence' during my higher secondary education.\n During my bachelor's, I also discovered my passion for web dev, which opened up a whole new realm of possibilities for me. Now, I enjoy working with both AI and web technologies, constantly exploring how to create innovative solutions.",
+    
+    "gradCollege": "PARUL INSTITUTE OF TECHNOLOGY",
+    "gradStream": "B.Tech. Computer Science & Technology",
+    "gradSubStream": "Specialization in Artificial Intelligence",
+    "hsSchool": "XII (W.B.C.H.S.E BOARD)",
+    "sscSchool": "X (W.B.B.S.E. BOARD)",
+    "gradcgpa": "7.72",
+    "hscgpa": "62.2%",
+    "ssccgpa": "78.43%",
+
+    "skills": {
+      "react": "I have been practicing React for over a year and have gained a solid understanding of it. I've worked on several projects using React JS, including full MERN stack implementations."
+    },
+
+    "certifications" :{
+        "c1" : "NPTEL (IIT Kharagpur)",
+        "c1sub" : "Introduction to Internet of Things",
+        "score" : "82%",
+        "c2" : "CISCO NETWORKING ACADEMY",
+        "c2sub" : "Introduction to Cyber Security"
+    }
+  }
+  
