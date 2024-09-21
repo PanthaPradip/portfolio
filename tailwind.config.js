@@ -11,6 +11,12 @@ export default {
         oswald : ['Oswald', 'sans-serif'],
         bebus :['Bebas Neue', 'sans-serif'],
         cursive : ['Great Vibes', 'sans-serif']
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
       }
     },
   },

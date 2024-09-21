@@ -12,9 +12,9 @@ function Footer() {
 
   return (
     
-    <footer id='footer' className='w-full  bg-[#24262b] flex flex-col pt-32 pb-20 px-40 relative z-20'>
+    <footer id='footer' className='w-full  bg-[#24262b] flex flex-col pt-32 pb-20 px-10 lg:px-40 relative z-20'>
 
-         <div className='w-full flex gap-4 justify-between font-sans border-b-[1px] border-red-400 pb-10'>
+         <div className='w-full flex flex-col lg:flex-row gap-12 lg:gap-4 justify-between font-sans border-b-[1px] border-red-400 pb-10'>
 
           <div>
               <p className='text-white font-semibold text-2xl'>PANTHA</p>

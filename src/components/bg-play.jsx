@@ -23,10 +23,9 @@ function BgPlay() {
   return (
     <div id='play' className='w-full h-screen overflow-hidden'>
 
-        <div data-scroll data-scroll-speed="-.8" className='relative w-full h-full bg-red-400'
+        <div data-scroll data-scroll-speed="-.8" className='relative w-full h-[80vh] lg:h-full bg-red-400 hidden lg:block cursor-cell'
             style={{
                 backgroundImage: `url(${bgplayImg})`,
-                backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundSize:'30%',
                 backgroundRepeat: 'no-repeat',

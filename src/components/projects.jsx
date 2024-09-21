@@ -17,16 +17,16 @@ function Projects() {
 
 
   return (
-    <div className='w-full py-20'>
-        <div className='w-full px-20 border-b-2 border-zinc-400 pb-10'>
-          <h1 className='text-8xl tracking-tight'>Projects</h1>
+    <div className='w-full pb-20 lg:py-20'>
+        <div className='w-full pl-10  lg:px-20 border-b-2 border-zinc-400 pb-10'>
+          <h1 className='text-5xl lg:text-8xl tracking-tight'>Projects</h1>
         </div>
 
-        <div className="cards w-full flex gap-10 px-20 py-10">
+        <div className="cards w-full flex lg:flex-row flex-col gap-4 lg:gap-10 px-5 lg:px-20 pt-10 pb-5 lg:py-10 justify-center items-center">
 
 {/* ------------------------------------------------------------------------ */}
 {/* Card 1 */}
-      <div onMouseEnter={()=>setHover({...isHover, hover1:true})} onMouseLeave={()=>setHover({...isHover, hover1:false})} className="card1container card1 w-1/2 h-[60vh] bg-slate-300 rounded-xl p-10 relative flex justify-center items-center">
+      <div onMouseEnter={()=>setHover({...isHover, hover1:true})} onMouseLeave={()=>setHover({...isHover, hover1:false})} className="card1container card1 w-[80vw] lg:w-1/2 lg:h-[60vh] bg-slate-300 rounded-xl p-4 lg:p-10 relative flex justify-center items-center">
             <h1 className='absolute text-2xl font-sans tracking-tighter bottom-4 font-bold text-zinc-600 flex overflow-hidden'>
                 {p1.split("").map((item, i)=>
 
@@ -34,7 +34,7 @@ function Projects() {
                     
                 )}
             </h1>
-        <div className="card1 w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%]  mb-8 transition-all ease-in-out duration-1000">
+        <div className="card1 lg:w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%]  lg:mb-8 transition-all ease-in-out duration-1000">
             <img src={project1Image}/>
         </div>
       </div>
@@ -43,7 +43,7 @@ function Projects() {
 {/* ------------------------------------------------------------------------ */}
 {/* Card 2 */}
 
-          <div onMouseEnter={()=>setHover({...isHover, hover2:true})} onMouseLeave={()=>setHover({...isHover, hover2:false})} className="card1container card1 w-1/2 h-[60vh] bg-zinc-600 rounded-xl p-10 relative flex justify-center items-center">
+          <div onMouseEnter={()=>setHover({...isHover, hover2:true})} onMouseLeave={()=>setHover({...isHover, hover2:false})} className="card1container card1 w-[80vw] lg:w-1/2 lg:h-[60vh] bg-zinc-600 rounded-xl px-4 py-7 lg:p-10 relative flex justify-center items-center">
                 <h1 className='absolute text-2xl font-sans tracking-tighter bottom-4 font-bold text-zinc-400 flex overflow-hidden'>
                   {p2.split("").map((item, i)=>
 
@@ -51,7 +51,7 @@ function Projects() {
                     
                   )}
                 </h1>
-              <div className="card1 w-[95%] h-fit rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%] mb-8 transition-all ease-in-out duration-1000">
+              <div className="card1 w-[95%] h-fit rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%] lg:mb-8 transition-all ease-in-out duration-1000">
                 <img src={project2Image}/>
               </div>
             </div>
@@ -64,9 +64,9 @@ function Projects() {
 
         {/* Second Card Section */}
 
-        <div className="cards w-full flex gap-10 px-20 py-10">
+        <div className="cards w-full flex flex-col lg:flex-row gap-4 lg:gap-10 px-20 lg:py-10 justify-center items-center">
 
-            <div onMouseEnter={()=>setHover({...isHover, hover3:true})} onMouseLeave={()=>setHover({...isHover, hover3:false})} className="card3container card1 w-1/2 h-[55vh] bg-[#6482AD] rounded-xl p-10 relative flex justify-center items-center">
+            <div onMouseEnter={()=>setHover({...isHover, hover3:true})} onMouseLeave={()=>setHover({...isHover, hover3:false})} className="card3container card1 w-[80vw] lg:w-1/2 lg:h-[60vh] bg-[#6482AD] rounded-xl p-4 lg:p-10 relative flex justify-center items-center">
 
             <h1 className='absolute text-2xl font-sans tracking-tighter bottom-8 font-bold text-zinc-50 flex overflow-hidden'>
                 {p3.split("").map((item, i)=>
@@ -76,7 +76,7 @@ function Projects() {
                 )}
               </h1>
 
-              <div className="card3 w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%] mb-8 transition-all ease-in-out duration-1000">
+              <div className="card3 w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%] lg:mb-8 transition-all ease-in-out duration-1000">
                 <img src={project3Image}/>
               </div>
             </div>
@@ -84,7 +84,7 @@ function Projects() {
 
 
 
-            <div onMouseEnter={()=>setHover({...isHover, hover4:true})} onMouseLeave={()=>setHover({...isHover, hover4:false})} className="card4container w-1/2 h-[55vh] bg-slate-500 rounded-xl p-10 relative flex justify-center items-center">
+            <div onMouseEnter={()=>setHover({...isHover, hover4:true})} onMouseLeave={()=>setHover({...isHover, hover4:false})} className="card4container w-[80vw] lg:w-1/2 lg:h-[60vh] bg-slate-500 rounded-xl p-4 lg:p-10 relative flex justify-center items-center">
 
             <h1 className='absolute text-2xl font-sans tracking-tighter bottom-8 font-bold text-zinc-300 flex overflow-hidden'>
                 {p4.split("").map((item, i)=>
@@ -94,7 +94,7 @@ function Projects() {
                 )}
               </h1>
 
-              <div className="card4 w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%]  mb-8 transition-all ease-in-out duration-1000">
+              <div className="card4 w-[95%] h-[80%] rounded-md overflow-hidden  hover:rounded-3xl hover:w-[100%]  lg:mb-8 transition-all ease-in-out duration-1000">
                 <img src={project4Image}/>
               </div>
             </div>

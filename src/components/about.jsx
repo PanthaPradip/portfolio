@@ -20,8 +20,9 @@ function About() {
 
 
   return (
-    <div id='about' data-scroll data-scroll-section data-scroll-speed="-.2"  className='w-full px-20 py-28 bg-[#C0C78C] rounded-tl-xl rounded-tr-xl flex'>
-        <container className='flex flex-col gap-8 w-[60%] px-10 font-sans font-light text-slate-900'>
+    <div id='about' data-scroll data-scroll-section data-scroll-speed="-.2"  className='w-full px-6 lg:px-20 py-28 bg-[#C0C78C] rounded-tl-xl rounded-tr-xl flex flex-col lg:flex-row'>
+
+        <container className='flex flex-col gap-8 w-full lg:w-[60vw] lg:px-10 font-sans font-light text-slate-900'>
 
             <div>
             <div className='bg-[#507687] rounded-md font-cursive  text-slate-300 text-4xl py-1 mb-4 pl-4 tracking-[0.08rem]'>About me</div>
@@ -94,7 +95,7 @@ function About() {
 
 
 
-        <container className='flex flex-col w-[40%] py-6 px-10 bg-[#C1D8C3] rounded-xl bg-opacity-50 gap-4 drop-shadow-xl'>
+        <container className='flex flex-col mt-6 lg:mt-0 lg:w-[40%] py-6 px-10 bg-[#C1D8C3] rounded-xl bg-opacity-50 gap-4 drop-shadow-xl'>
 
                     <p className='text-center tracking-widest text-xl mb-2 text-white'>TECH STACK</p>
                     
@@ -157,22 +158,22 @@ function About() {
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     
-                    <img className='w-[4rem]' src={cppImg}/>
+                    <img className='w-[3rem] lg:w-[4rem]' src={cppImg}/>
                     <p>C++</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
-                    <img className='w-[4rem]'  src={pythonImg}/>
+                    <img className='w-[3rem] lg:w-[4rem]'  src={pythonImg}/>
                     <p>Python</p>                    
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
-                    <img className='w-[4rem]'  src={htmlImg}/>
+                    <img className='w-[3rem] lg:w-[4rem]'  src={htmlImg}/>
                     <p>HTML</p>                   
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
-                    <img className='w-[4rem]' src={cssImg}/>
+                    <img className='w-[3rem] lg:w-[4rem]' src={cssImg}/>
                     <p>CSS</p>
                 </div>
                 
@@ -186,17 +187,17 @@ function About() {
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     
                     <img className='w-[4rem]' src={prImg}/>
-                    <p>Premiere Pro</p>
+                    <p className='hidden lg:block'>PremierePro</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     <img className='w-[4rem]'  src={aeImg}/>
-                    <p>After Effects</p>                    
+                    <p className='hidden lg:block'>After Effects</p>                    
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     <img className='w-[4rem]'  src={psImg}/>
-                    <p>Photoshop</p>                   
+                    <p className='hidden lg:block'>Photoshop</p>                   
                 </div>
                 
             </div>
