@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 function LandingPage() {
 
-    const resumeLink = 'https://drive.google.com/file/d/1baAvQth3Ky3X1uHQBi5FonvJC5cTN0TD/view?usp=drive_link';
+    const resumeLink = 'https://drive.google.com/file/d/1aAodVTCE3WpmO2nhlHfROdQ8iqp3sBTp/view?usp=sharing';
 
     
     const textArr = ['Developer','UI-UX','Designer'];

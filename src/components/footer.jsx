@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     
-    <footer id='footer' className='w-full  bg-[#24262b] flex flex-col pt-32 pb-20 px-40'>
+    <footer id='footer' className='w-full  bg-[#24262b] flex flex-col pt-32 pb-20 px-40 relative z-20'>
 
          <div className='w-full flex gap-4 justify-between font-sans border-b-[1px] border-red-400 pb-10'>
 
