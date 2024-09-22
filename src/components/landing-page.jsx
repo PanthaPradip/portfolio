@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowDownLong } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 import Box1animation from './json/box1animate.json';
 import Lottie from 'lottie-react'
+import LocomotiveScroll from 'locomotive-scroll';
 
 function LandingPage() {
+
+    const locomotive = new LocomotiveScroll();
 
     const resumeLink = 'https://drive.google.com/file/d/1aAodVTCE3WpmO2nhlHfROdQ8iqp3sBTp/view?usp=sharing';
 
@@ -14,11 +17,14 @@ function LandingPage() {
 
     
 
+    const isMobile = window.innerWidth < 800;
+    const scrollSpead = isMobile ? '0':'.2';
+
   return (
 
    
     <div 
-        data-scroll data-scroll-container data-scroll-speed="-.3" className='w-[100vw] h-[60vh] lg:h-[99vh] bg-[#F5F7F8] pt-1'>
+        data-scroll data-scroll-container data-scroll-speed={scrollSpead} className='w-[100vw] h-[75vh] lg:h-[99vh] bg-[#F5F7F8] pt-1'>
         
         <div className='mt-32 lg:mt-40 px-10 lg:px-20'>
             {(textArr.map((item, index)=>

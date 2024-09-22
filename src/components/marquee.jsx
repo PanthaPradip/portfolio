@@ -1,11 +1,16 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 function Marquee() {
+  const locomotive = new LocomotiveScroll();
 
   const textStr = (<span>CODE&nbsp; DEBUG&nbsp; BUILD&nbsp; DEPLOY&nbsp;</span>);
 
   const isMobile = window.innerWidth < 800;
-  const scrollSpead = isMobile ? '-.08':'.2';
+  const scrollSpead = isMobile ? '0':'.2';
     
   return (
     <div data-scroll data-scroll-section data-scroll-speed={scrollSpead} className='w-[100vw] pt-20 pb-10 lg:pb-40 bg-[#16423C] rounded-tr-xl rounded-tl-xl'>
