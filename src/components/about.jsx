@@ -18,11 +18,14 @@ import psImg from '../assets/psImage.png';
 
 function About() {
 
+    const isMobile = window.innerWidth < 800;
+    const scrollSpeed = isMobile ? '0' : '-.2';
+
 
   return (
-    <div id='about' data-scroll data-scroll-section data-scroll-speed="-.2"  className='w-full px-6 lg:px-20 py-28 bg-[#C0C78C] rounded-tl-xl rounded-tr-xl flex flex-col lg:flex-row'>
+    <div id='about' data-scroll data-scroll-section data-scroll-speed={scrollSpeed}  className='w-full px-6 lg:px-20 py-28 bg-[#C0C78C] rounded-tl-xl rounded-tr-xl flex flex-col lg:flex-row'>
 
-        <container className='flex flex-col gap-8 w-full lg:w-[60vw] lg:px-10 font-sans font-light text-slate-900'>
+        <div className='flex flex-col gap-8 w-full lg:w-[60vw] lg:px-10 font-sans font-light text-slate-900'>
 
             <div>
             <div className='bg-[#507687] rounded-md font-cursive  text-slate-300 text-4xl py-1 mb-4 pl-4 tracking-[0.08rem]'>About me</div>
@@ -91,11 +94,11 @@ function About() {
                     
                 
             </div>
-        </container>
+        </div>
 
 
 
-        <container className='flex flex-col mt-6 lg:mt-0 lg:w-[40%] py-6 px-10 bg-[#C1D8C3] rounded-xl bg-opacity-50 gap-4 drop-shadow-xl'>
+        <div className='flex flex-col mt-6 lg:mt-0 lg:w-[40%] py-6 px-10 bg-[#C1D8C3] rounded-xl bg-opacity-50 gap-4 drop-shadow-xl'>
 
                     <p className='text-center tracking-widest text-xl mb-2 text-white'>TECH STACK</p>
                     
@@ -202,7 +205,7 @@ function About() {
                 
             </div>
 
-        </container>
+        </div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import Riddle from './riddle'
 
 function Cards() {
   return (
-    <div className='w-full h-[80vh] bg-zinc-200 flex flex-col lg:flex-row items-center px-32 gap-5 sticky top-0 z-10 pb-10 pt-10'>
+    <div className='w-full h-[80vh] bg-zinc-200 flex flex-col lg:flex-row items-center px-32 gap-5 sticky top-0 lg:-top-16 z-10 pb-10 pt-10'>
 
         <div className="container1 w-[90vw] lg:w-1/2 h-[50vh]">
             <div className="card1 rounded-xl w-full h-full bg-[#004d43]">
