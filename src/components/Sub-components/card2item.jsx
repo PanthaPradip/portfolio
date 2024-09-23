@@ -1,48 +1,56 @@
 import React, { useState } from 'react'
 import { FaChevronLeft, FaAngleRight } from "react-icons/fa6";
+import rudra from '../../assets/review/rudra.png'
+import palash from '../../assets/review/palash.png'
+import deba from '../../assets/review/deba.png'
+import sarthak from '../../assets/review/sarthak.png'
+import vedant from '../../assets/review/vedant.png'
+import shruti from '../../assets/review/shruti.png'
 
 function Card2Item() {
 
+    const imageArr = [shruti, rudra, palash, vedant, deba, sarthak];
 
     const reviewObj = {
         
         p1 :{
         name:'Shruti',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        review : 'Pradip was instrumental in bringing our college project to life. His leadership and technical expertise were impressive, especially in coordinating the team and ensuring timely progress. He has a natural ability to inspire others and foster collaboration. '
         },
         p2 :{
         name:'Rudranath',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        review : "Pradip's creativity truly shined during our design-focused project. His keen eye for detail and understanding of user experience were evident in every aspect of the project. He brought fresh ideas to the table, balancing aesthetics with functionality perfectly."
         },
         p3 :{
         name:'Palash',
         review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
         },
         p4 :{
-        name:'Hardik',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        name:'Vedant',
+        review : 'Working with Pradip on a time-sensitive project was a great experience. His calm demeanor under pressure and ability to manage tight deadlines without compromising quality were commendable.'
         },
         p5 :{
-        name:'Vedant',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        name:'Debanjan',
+        review : 'It was a pleasure to have Pradip on our team during college projects. From requirement analysis to development, making necessary adjustments, and handling documentation, his contributions were invaluable. '
         },
         p6 :{
-        name:'Anuj',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        name:'Sarthak',
+        review : 'Pradip stood out as an integral member of our team during college projects. His attention to detail, especially in refining project requirements, development execution, and precise documentation, was outstanding.'
         }
     }
 
     const key = Object.keys(reviewObj);
-    const countDiv = key;
+
 
     const [curr, setCurr] = useState(0);
 
     const prev = ()=>{
-        setCurr(curr => curr === 0 ? countDiv.length-1 : curr - 1);
+        setCurr(curr => curr === 0 ? key.length-1 : curr - 1);
     }
     const next = ()=>{
-        setCurr(curr => curr === countDiv.length-1 ? 0 : curr + 1);
+        setCurr(curr => curr === key.length-1 ? 0 : curr + 1);
     }
+
 
 
 
@@ -57,26 +65,34 @@ function Card2Item() {
 
 
   
-        {countDiv.map((item, index)=> 
+        {key.map((item, index)=> 
             
             
-            <div className='h-full p-2 flex
+            <div key={index} className='h-full px-2 flex
             transition-transform ease-out duration-1000' 
             style={{transform:`translateX(-${curr*100}%)`}}>
 
 
-                <div key={index} className='w-[25rem] flex flex-col justify-center items-center gap-4 text-center px-14'>
+                <div key={index} className='w-[25rem] flex flex-col justify-center items-center gap-4 text-center px-10 pb-10'>
 
-                    <img></img>
+                    <img className='w-20 h-20 rounded-full' src={imageArr[index]}/>
 
                     <p className='text-2xl text-slate-300'>{reviewObj[key[index]].name}</p>
                     <p className='text-sm text-slate-400 font-light'>{reviewObj[key[index]].review}</p>
                 </div>
-
-
-
             </div>      
         )}
+
+
+        <div className='absolute bottom-4 right-[41%]'>
+            <div className='flex items-center justify-center gap-1'>
+                {key.map((item, index)=>
+                    <div key={index} className={`transition-all ease-out duration-500 bg-slate-100 rounded-full w-2 h-2 ${index == curr ? 'p-2' : 'bg-opacity-50'}`}>
+
+                    </div>
+                )}
+            </div>
+        </div>
 
     </div>
   )

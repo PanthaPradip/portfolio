@@ -26,7 +26,7 @@ function Cards() {
 
 
 
-              <div className="card3 rounded-xl w-[30vw] lg:w-1/2 h-[40vh] lg:h-full bg-[#212121] hidden lg:block">
+              <div className="card3 rounded-xl w-[30vw] lg:w-1/2 h-[40vh] lg:h-full bg-[#212121] hidden lg:block overflow-hidden">
 
                         {/* content for 2nd crad */}
                         <Card3Item/>
