@@ -55,7 +55,9 @@ function Riddle() {
     
 
   return (
-    <div className='flex flex-col gap-4 px-6 justify-center items-center'>
+
+    <div
+        className='flex flex-col gap-4 px-6 justify-center items-center'>
 
             <div onClick={handleCLick} className={`px-10 mt-6 py-2 lg:py-4  w-full rounded-md text-center  transition-all ease-in-out duration-500 select-none ${canFetch ? "bg-slate-300 hover:tracking-wider active:bg-slate-400 cursor-pointer" : "bg-slate-500"}`}>Click here to get a riddle</div>
 
@@ -77,6 +79,7 @@ function Riddle() {
                 <MdKeyboardDoubleArrowUp className='text-3xl'/>
             </div>
     </div>
+
   )
 }   
 

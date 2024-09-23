@@ -14,18 +14,20 @@ import cssImg from '../assets/cssImage.png';
 import prImg from '../assets/prImage.png';
 import aeImg from '../assets/aeImage.png';
 import psImg from '../assets/psImage.png';
-import LocomotiveScroll from 'locomotive-scroll';
+
 
 
 function About() {
-    const locomotive = new LocomotiveScroll();
-
-    const isMobile = window.innerWidth < 800;
-    const scrollSpeed = isMobile ? '0' : '-.2';
+  
 
 
   return (
-    <div id='about' data-scroll data-scroll-section data-scroll-speed={scrollSpeed}  className='w-full px-6 lg:px-20 py-28 bg-[#C0C78C] lg:rounded-tl-xl lg:rounded-tr-xl flex flex-col lg:flex-row'>
+    
+
+    <div data-scroll-container>
+    <div id='about' data-scroll data-scroll-section data-scroll-speed={window.innerWidth < 800 ? "0" : "-.2"}  
+    
+    className='w-full px-6 lg:px-20 py-28 bg-[#C0C78C] lg:rounded-tl-xl lg:rounded-tr-xl flex flex-col lg:flex-row'>
 
         <div className='flex flex-col gap-8 w-full lg:w-[60vw] lg:px-10 font-sans font-light text-slate-900'>
 
@@ -208,6 +210,7 @@ function About() {
             </div>
 
         </div>
+    </div>
     </div>
   )
 }

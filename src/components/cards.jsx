@@ -1,5 +1,7 @@
 import React from 'react'
 import Riddle from './riddle'
+import Card2Item from './Sub-components/card2item'
+import Card3Item from './Sub-components/card3item'
 
 function Cards() {
   return (
@@ -12,13 +14,23 @@ function Cards() {
         </div>
 
 
+
         <div className="container2 flex gap-5 w-1/2 h-[50vh]">
-              <div className="card2 rounded-xl w-[20vw] lg:w-full h-[40vh] lg:h-full bg-[#212121] hidden lg:block">
+
+              <div className="card2 rounded-xl w-[20vw] lg:w-full h-[40vh] lg:h-full bg-[#212121] hidden lg:block overflow-hidden">
+
+                          {/* content for 2nd crad */}
+                          <Card2Item/>
 
               </div>
+
+
+
               <div className="card3 rounded-xl w-[30vw] lg:w-1/2 h-[40vh] lg:h-full bg-[#212121] hidden lg:block">
 
-            </div>
+                        {/* content for 2nd crad */}
+                        <Card3Item/>
+              </div>
         </div>
 
 

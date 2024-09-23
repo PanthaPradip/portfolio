@@ -20,14 +20,15 @@ function BgPlay() {
         })
     },[])
 
-    const isMobile = window.innerWidth < 800;
-    const scrollSpeed = isMobile ? '0' : '-.8';
+  
 
 
   return (
-    <div id='play' className='w-full h-screen overflow-hidden hidden lg:block'>
+    <div data-scroll-container id='play' className='w-full h-screen overflow-hidden hidden lg:block'>
 
-        <div data-scroll data-scroll-container data-scroll-speed={scrollSpeed} className='relative w-full h-[80vh] lg:h-full bg-red-400 cursor-cell'
+        <div data-scroll data-scroll-section data-scroll-speed={window.innerWidth < 800 ? "0" : "-.8"} 
+        
+        className='relative w-full h-[80vh] lg:h-full bg-red-400 cursor-cell'
             style={{
                 backgroundImage: `url(${bgplayImg})`,
                 backgroundPosition: 'center',

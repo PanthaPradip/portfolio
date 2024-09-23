@@ -7,12 +7,17 @@ import BgPlay from './components/bg-play';
 import Projects from './components/projects';
 import Cards from './components/cards';
 import Footer from './components/footer';
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 function App() {
 
-    
+
+  const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  });
 
   return (
     <div  className='w-full bg-[#F5F7F8] min-h-screen'>

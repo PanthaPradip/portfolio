@@ -18,7 +18,10 @@ function Projects() {
 
 
   return (
-    <div className='w-full pb-20 py-10 lg:py-20'>
+
+    <div data-scroll-container className=' relative z-50 bg-slate-100'>
+    <div data-scroll data-scroll-section data-scroll-speed="0" 
+     className='w-full pb-20 py-10 lg:py-20'>
         <div className='w-full pl-10  lg:px-20 border-b-2 border-zinc-400 pb-10'>
           <h1 className='text-5xl lg:text-8xl tracking-tight'>Projects</h1>
         </div>
@@ -104,6 +107,7 @@ function Projects() {
             </div>
         </div>
 
+    </div>
     </div>
   )
 }

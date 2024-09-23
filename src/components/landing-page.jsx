@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FaArrowDownLong } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 import Box1animation from './json/box1animate.json';
 import Lottie from 'lottie-react'
-import LocomotiveScroll from 'locomotive-scroll';
+
 
 function LandingPage() {
 
-    const locomotive = new LocomotiveScroll();
 
-    const resumeLink = 'https://drive.google.com/file/d/1aAodVTCE3WpmO2nhlHfROdQ8iqp3sBTp/view?usp=sharing';
+
+    const resumeLink = 'https://drive.google.com/file/d/1IEczaoqGnY5q5cpK5MTF3xxlCJK0Q2UM/view?usp=sharing';
 
     
     const textArr = ['Developer','frontend','Backend'];
@@ -17,14 +17,14 @@ function LandingPage() {
 
     
 
-    const isMobile = window.innerWidth < 800;
-    const scrollSpead = isMobile ? '0':'.2';
-
   return (
 
+
+    <div data-scroll-container>
    
-    <div 
-        data-scroll data-scroll-container data-scroll-speed={scrollSpead} className='w-[100vw] h-[75vh] lg:h-[99vh] bg-[#F5F7F8] pt-1'>
+    <div data-scroll-section data-scroll
+    
+    data-scroll-speed={window.innerWidth<800 ? "0" : "-.2"} className='w-[100vw] h-[75vh] lg:h-[99vh] bg-[#F5F7F8] pt-1'>
         
         <div className='mt-32 lg:mt-40 px-10 lg:px-20'>
             {(textArr.map((item, index)=>
@@ -81,6 +81,10 @@ function LandingPage() {
                 
             </div>
         </div>
+    </div>
+
+
+
     </div>
   ) 
 }
