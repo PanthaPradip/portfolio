@@ -80,22 +80,24 @@ function Card3Item() {
 
         <label>Submit Your URL</label>
     
-        <input className='w-full text-zinc-800 file:border-0 file:text-md font-light rounded-sm focus:outline-none px-2'  type='text' onChange={handleFileChange} />
+        <input className='w-full text-zinc-800 file:border-0 file:text-md font-light rounded-sm focus:outline-none px-4 py-1 lg:py-0 lg:px-2'  type='text' onChange={handleFileChange} />
       </div>
 
 
-      <div className='flex flex-col gap-4 relative'>
+      <div className='flex flex-col gap-4 relative justify-center items-center'>
       <button
         onClick={generateQRCode}
-        className="bg-zinc-600 text-white py-2 px-2 mx-4 rounded hover:bg-slate-500 transition-all ease-in duration-200"
+        className="bg-zinc-600 text-white py-2 px-2 mx-4 rounded hover:bg-slate-500 transition-all ease-in duration-200 w-[90%] lg:w-[85%]"
       >
         Generate QR Code
       </button>
 
-        <Lottie className={`absolute w-full top-10 ${isFetching ? "block" : "hidden"}`} animationData={loading2} loop={true}/>
+        <Lottie className={`absolute w-full -top-2 lg:top-10 ${isFetching ? "block" : "hidden"}`} animationData={loading2} loop={true}/>
 
         {/* OUTPUT QR */}
+        <div className='w-[50vw] h-[50vh] lg:w-full lg:h-full'>
         {qrCodeUrl && <img src={isFetching ? null : qrCodeUrl} />}
+        </div>
       </div>
 
 

@@ -87,7 +87,7 @@ function Card2Item() {
         <div className='absolute bottom-4 right-[41%]'>
             <div className='flex items-center justify-center gap-1'>
                 {key.map((item, index)=>
-                    <div key={index} className={`transition-all ease-out duration-500 bg-slate-100 rounded-full w-2 h-2 ${index == curr ? 'p-2' : 'bg-opacity-50'}`}>
+                    <div key={index} className={`mb-2 transition-all ease-out duration-500 bg-slate-100 rounded-full w-2 h-2 ${index == curr ? 'p-1' : 'bg-opacity-20'}`}>
 
                     </div>
                 )}
