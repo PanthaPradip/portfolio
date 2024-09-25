@@ -15,7 +15,7 @@ function Marquee() {
     <div data-scroll-container>
     <div data-scroll data-scroll-section data-scroll-speed={window.innerWidth < 800 ? "0" : ".2"} 
     
-      className='w-[100vw] pt-20 pb-10 lg:pb-40 bg-[#16423C] lg:rounded-tr-xl lg:rounded-tl-xl'>
+      className='w-[100vw] pt-10 lg:pt-20 pb-10 lg:pb-40 bg-[#16423C] lg:rounded-tr-xl lg:rounded-tl-xl'>
 
       
         <div className='text-white border-t-[1px] border-b-[1px] border-slate-500 flex whitespace-nowrap overflow-hidden'>

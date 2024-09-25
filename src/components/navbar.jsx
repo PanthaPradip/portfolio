@@ -5,12 +5,17 @@ import { RxCrossCircled } from "react-icons/rx";
 
 function Navbar() {
 
-    const navArr = ['Explore','Blog','About','Social','Contact'];
-
+    const navArr = ['Play','About','Social','Contact','Explore'];
+    const hrefArr = ['#','#about','#footer', '#footer','#cards'];
 
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isNavClicked, setNavbar] = useState(false);
+
+
+    const handleHref = ()=>{
+      setNavbar(false);
+    }
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -53,7 +58,7 @@ function Navbar() {
                   
                   <a className={`text-lg font-light cursor-pointer active:text-red-700 hover:border-b-[1px] hover:border-slate-700 transition-all ease-in duration-200 ${index === (navArr.length-1) && "ml-32"}`} key={index}
                   
-                  href={item==='About' ? '#about' : item==='Contact' ? '#footer' : item==='Explore' ? '#play' : item==='Social' ? '#footer' : '#'}
+                  href={item==='About' ? '#about' : item==='Contact' ? '#footer' : item==='Explore' ? '#cards' : item==='Social' ? '#footer':item ==='Play'?'#play' : '#'}
                   
                   
                   >{item}</a>
@@ -75,11 +80,11 @@ function Navbar() {
                     </div>
 
                     <div className='border-b-[1px] border-red-500'>
-                      <p className='text-2xl text-slate-400 mb-3'>Pantha Pradip</p>
+                      <p className='text-2xl text-slate-400 mb-3'>Welcome</p>
                     </div>
                     
                      {(
-                      navArr.map((item,index)=><li className='text-lg text-slate-300' key={index}>{item}</li>)
+                      navArr.map((item,index)=><a onClick={handleHref} href={hrefArr[index]} className='text-lg text-slate-300' key={index}>{item}</a>)
                      )}
                   </ul>
               </div>

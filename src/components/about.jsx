@@ -161,27 +161,27 @@ function About() {
 
 
 
-            <div className='bg-[#E7CCCC] flex justify-between p-4 rounded-xl font-sans'>
+            <div className='bg-[#E7CCCC] flex justify-between p-4 rounded-xl font-sans '>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     
                     <img className='w-[3rem] lg:w-[4rem]' src={cppImg}/>
-                    <p>C++</p>
+                    <p className='hidden lg:block'>C++</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     <img className='w-[3rem] lg:w-[4rem]'  src={pythonImg}/>
-                    <p>Python</p>                    
+                    <p className='hidden lg:block'>Python</p>                    
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     <img className='w-[3rem] lg:w-[4rem]'  src={htmlImg}/>
-                    <p>HTML</p>                   
+                    <p className='hidden lg:block'>HTML</p>                   
                 </div>
 
                 <div className='flex flex-col justify-center items-center w-[25%]'>
                     <img className='w-[3rem] lg:w-[4rem]' src={cssImg}/>
-                    <p>CSS</p>
+                    <p className='hidden lg:block'>CSS</p>
                 </div>
                 
             </div>

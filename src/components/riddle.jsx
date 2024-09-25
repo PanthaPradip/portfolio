@@ -56,25 +56,25 @@ function Riddle() {
 
   return (
 
-    <div
-        className='flex flex-col gap-4 px-6 justify-center items-center'>
+    <div id='riddle'
+        className='flex flex-col gap-2 px-6 justify-center items-center'>
 
             <div onClick={handleCLick} className={`px-10 mt-6 py-2 lg:py-4  w-full rounded-md text-center  transition-all ease-in-out duration-500 select-none ${canFetch ? "bg-slate-300 hover:tracking-wider active:bg-slate-400 cursor-pointer" : "bg-slate-500"}`}>Click here to get a riddle</div>
 
             <Lottie className={`absolute ${isFetching ? "block" : "hidden"}`} animationData={LoadingAnimation} loop={true}/>
 
-            <div  className='w-full h-[18vh] px-2 lg:px-4 rounded-md flex justify-center items-center overflow-scroll text-sm lg:text-lg'>
+            <div  className='w-full h-[18vh] px-2 lg:px-4 rounded-md flex justify-center items-center overflow-auto text-sm lg:text-lg font-light'>
                 <p  className='text-slate-300 text-center'>{riddle}</p>
                 
             </div>
 
 
-            <div className='text-slate-400 text-sm lg:text-lg w-full h-[8vh] lg:px-4 p-4 rounded-md flex justify-center items-center overflow-scroll'>
+            <div className='text-slate-400 text-sm font-light lg:text-lg w-full h-[12vh] lg:px-4 p-4 rounded-md flex justify-center items-center overflow-y-scroll'>
                 <p className='text-center'>{isVisible ? answer : null}</p>
             </div>
 
 
-            <div onClick={showAnswer} className='text-slate-400 flex justify-center items-center hover:text-slate-200 transition-all ease-in duration-200 cursor-pointer active:text-slate-400 select-none mb-6'>
+            <div onClick={showAnswer} className='text-slate-400 flex justify-center items-center hover:text-slate-200 transition-all ease-in duration-200 cursor-pointer active:text-slate-400 select-none  overflow-auto'>
                 <p>Show Answer</p>
                 <MdKeyboardDoubleArrowUp className='text-3xl'/>
             </div>

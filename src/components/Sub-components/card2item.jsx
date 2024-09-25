@@ -23,7 +23,7 @@ function Card2Item() {
         },
         p3 :{
         name:'Palash',
-        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach. Keep up the excellent work!'
+        review : 'Your work is a true reflection of dedication and creativity. The attention to detail and thoughtful execution shine through, making it stand out. The results speak for themselves, showcasing both your technical skills and innovative approach.'
         },
         p4 :{
         name:'Vedant',
@@ -68,12 +68,12 @@ function Card2Item() {
         {key.map((item, index)=> 
             
             
-            <div key={index} className='h-full px-2 flex
+            <div key={index} className='h-full lg:px-2 flex
             transition-transform ease-out duration-1000' 
             style={{transform:`translateX(-${curr*100}%)`}}>
 
 
-                <div key={index} className='w-[25rem] flex flex-col justify-center items-center gap-4 text-center px-10 pb-10'>
+                <div key={index} className='w-[90vw] lg:w-[25rem] flex flex-col justify-center items-center gap-4 text-center px-10 pb-10'>
 
                     <img className='w-20 h-20 rounded-full' src={imageArr[index]}/>
 
