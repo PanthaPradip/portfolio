@@ -12,7 +12,7 @@ function LandingPage() {
     const resumeLink = 'https://drive.google.com/file/d/1IEczaoqGnY5q5cpK5MTF3xxlCJK0Q2UM/view?usp=sharing';
 
     
-    const textArr = ['Developer','frontend','Backend'];
+    const textArr = ['developer','frontend','ui-ux'];
     const bottomTextArr = ['B.Tech. Computer Science & Engineering','Specialization in Artificial Intelligence'];
 
     
