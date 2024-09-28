@@ -9,7 +9,7 @@ function LandingPage() {
 
 
 
-    const resumeLink = 'https://drive.google.com/file/d/1IEczaoqGnY5q5cpK5MTF3xxlCJK0Q2UM/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/1ZahnvJPqUG8PMcQ84FnjtYKizfyTrOO6/view?usp=sharing';
 
     
     const textArr = ['developer','frontend','ui-ux'];
