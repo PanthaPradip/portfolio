@@ -7,8 +7,8 @@
     "hsSchool": "XII (W.B.C.H.S.E BOARD)",
     "sscSchool": "X (W.B.B.S.E. BOARD)",
     "gradcgpa": "7.72",
-    "hscgpa": "62.2%",
-    "ssccgpa": "78.43%",
+    "hscgpa": ,
+    "ssccgpa": ,
 
     "skills": {
       "react": "I have been practicing React for over a year and have gained a solid understanding of it. I've worked on several projects using React JS, including full MERN stack implementations."
